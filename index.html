@@ -1,58 +1,69 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- =======================
+       META / TITLE
+  ======================== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>J&G Metal Products LLC | HVAC Sheet Metal Manufacturing</title>
-  <meta name="description" content="Family-owned HVAC sheet metal manufacturing with 17+ years experience. Rapid-response delivery and custom precision fabrication. Made in the USA. Serving Sacramento and surrounding areas." />
+  <title>J&amp;G Metal Products LLC | HVAC Sheet Metal Manufacturing</title>
+  <meta name="description" content="Family-owned HVAC sheet metal manufacturing with 17+ years experience. Rapid-response delivery and custom precision fabrication. Serving Sacramento and surrounding areas." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-
+  <!-- =======================
+       FONTS / STYLES
+  ======================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- =======================
+       HEADER / NAV
+  ======================== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="J&G Metal Products Home">
-        <img class="brand-logo" src="assets/logo.png" alt="J&G Metal Products LLC logo" />
+      <!-- Brand -->
+      <a class="brand" href="#top" aria-label="J&amp;G Metal Products Home">
+        <img class="brand-logo" src="assets/logo.png" alt="J&amp;G Metal Products LLC logo" />
         <div class="brand-text">
           <div class="brand-name">J&amp;G Metal Products LLC</div>
         </div>
       </a>
 
-        <nav class="nav">
-            <a href="products.html">Products</a>
-            <a href="#services">Services</a>
-            <a href="#areas">Service Area</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#customers">Customers</a>
-            <a href="#contact" class="btn btn-small">Contact</a>
-        </nav>
-
-
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
-    </div>
-
-    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <!-- Desktop nav -->
+      <nav class="nav" aria-label="Primary">
         <a href="products.html">Products</a>
         <a href="#services">Services</a>
         <a href="#areas">Service Area</a>
         <a href="#reviews">Reviews</a>
         <a href="#customers">Customers</a>
-        <a href="#contact">Contact</a>
+        <a class="btn btn-small" href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
 
-
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobileNav" aria-hidden="true" aria-label="Mobile">
+      <a href="products.html">Products</a>
+      <a href="#services">Services</a>
+      <a href="#areas">Service Area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#customers">Customers</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- =======================
+         HERO
+    ======================== -->
     <section class="hero">
-        
       <div class="container hero-grid">
+        <!-- Left: headline + CTA -->
         <div class="hero-copy">
           <div class="badge-row">
             <span class="badge">Family-Owned &amp; Operated</span>
@@ -77,6 +88,7 @@
           </div>
         </div>
 
+        <!-- Right: value panel -->
         <div class="hero-panel">
           <div class="panel-top">
             <h2>What we deliver</h2>
@@ -92,18 +104,18 @@
 
           <div class="panel-footer">
             <div class="mini">
-                <div class="mini-title">Fast response</div>
-                <div class="mini-sub">Reach out for a quote</div>
+              <div class="mini-title">Fast response</div>
+              <div class="mini-sub">Reach out for a quote</div>
             </div>
             <a class="link" href="#contact">Contact →</a>
-            </div>
-
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- =======================
+         SERVICES
+    ======================== -->
     <section class="section" id="services">
       <div class="container">
         <div class="section-head">
@@ -132,7 +144,9 @@
       </div>
     </section>
 
-    <!-- SERVICE AREA -->
+    <!-- =======================
+         SERVICE AREA
+    ======================== -->
     <section class="section alt" id="areas">
       <div class="container">
         <div class="section-head">
@@ -140,6 +154,7 @@
           <p class="muted">Serving Sacramento and surrounding cities:</p>
         </div>
 
+        <!-- Filled by script.js -->
         <div class="chips" id="areaChips"></div>
 
         <div class="area-footer">
@@ -149,7 +164,9 @@
       </div>
     </section>
 
-    <!-- REVIEWS (rotating) -->
+    <!-- =======================
+         REVIEWS
+    ======================== -->
     <section class="section" id="reviews">
       <div class="container">
         <div class="section-head">
@@ -176,7 +193,9 @@
       </div>
     </section>
 
-    <!-- CURRENT CUSTOMERS -->
+    <!-- =======================
+         CUSTOMERS
+    ======================== -->
     <section class="section alt" id="customers">
       <div class="container">
         <div class="section-head">
@@ -184,6 +203,7 @@
           <p class="muted">A few of the teams we’re proud to support.</p>
         </div>
 
+        <!-- Filled by script.js -->
         <div class="customer-grid" id="customerGrid"></div>
 
         <div class="customer-note">
@@ -192,115 +212,111 @@
       </div>
     </section>
 
-    <!-- GALLERY (optional, keep if you want) -->
+    <!-- =======================
+         PRODUCT GALLERY
+    ======================== -->
     <section class="section" id="gallery">
       <div class="container">
         <div class="section-head">
           <h2>Product Gallery</h2>
           <p class="muted">
-        <a href="products.html" class="gallery-link">
-            Click here to learn more about our products →
-        </a>
-</p>
-
+            <a href="products.html" class="gallery-link">Click here to learn more about our products →</a>
+          </p>
         </div>
 
+        <!-- Filled by script.js -->
         <div class="gallery-grid" id="galleryGrid"></div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- =======================
+         CONTACT
+    ======================== -->
     <section class="section alt" id="contact">
       <div class="container">
         <div class="section-head">
           <h2>Contact</h2>
-          <p class="muted">Call or email us to receive a quote. Check out our socials below in the meantime!
+          <p class="muted">Call or email us to receive a quote. Check out our socials below in the meantime!</p>
         </div>
 
         <div class="contact-grid">
-            <div class="contact-card">
+          <!-- Contact: Jr -->
+          <div class="contact-card">
             <h3>Geronimo (Jr) Arzaluz</h3>
 
             <div class="contact-actions">
-                <a class="btn btn-small" href="tel:19165017625" aria-label="Call Geronimo Arzaluz">
-                <!-- Phone icon -->
+              <a class="btn btn-small" href="tel:19165017625" aria-label="Call Geronimo Arzaluz">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V21a1 1 0 01-1 1C9.4 22 2 14.6 2 5a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.6 3.6 1 1 0 01-.25 1z"/>
+                  <path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V21a1 1 0 01-1 1C9.4 22 2 14.6 2 5a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.6 3.6 1 1 0 01-.25 1z"/>
                 </svg>
                 <span>Call</span>
-                </a>
+              </a>
 
-                <a class="btn btn-small" href="mailto:jr@jgmetalproducts.com?subject=Quote%20Request%20-%20J%26G%20Metal%20Products" aria-label="Email Geronimo Arzaluz">
-                <!-- Email icon -->
+              <a class="btn btn-small" href="mailto:jr@jgmetalproducts.com?subject=Quote%20Request%20-%20J%26G%20Metal%20Products" aria-label="Email Geronimo Arzaluz">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm8 7L4.5 6.5h15L12 11zm8 7V8.2l-8 4.9-8-4.9V18h16z"/>
+                  <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm8 7L4.5 6.5h15L12 11zm8 7V8.2l-8 4.9-8-4.9V18h16z"/>
                 </svg>
                 <span>Email</span>
-                </a>
+              </a>
             </div>
-            </div>
+          </div>
 
-
-            <div class="contact-card">
+          <!-- Contact: Guillermo -->
+          <div class="contact-card">
             <h3>Guillermo Perez</h3>
 
             <div class="contact-actions">
-                <a class="btn btn-small" href="tel:19168215235" aria-label="Call Guillermo Perez">
+              <a class="btn btn-small" href="tel:19168215235" aria-label="Call Guillermo Perez">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V21a1 1 0 01-1 1C9.4 22 2 14.6 2 5a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.6 3.6 1 1 0 01-.25 1z"/>
+                  <path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V21a1 1 0 01-1 1C9.4 22 2 14.6 2 5a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.6 3.6 1 1 0 01-.25 1z"/>
                 </svg>
                 <span>Call</span>
-                </a>
+              </a>
 
-                <a class="btn btn-small" href="mailto:guillermo@jgmetalproducts.com?subject=Quote%20Request%20-%20J%26G%20Metal%20Products" aria-label="Email Guillermo Perez">
+              <a class="btn btn-small" href="mailto:guillermo@jgmetalproducts.com?subject=Quote%20Request%20-%20J%26G%20Metal%20Products" aria-label="Email Guillermo Perez">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm8 7L4.5 6.5h15L12 11zm8 7V8.2l-8 4.9-8-4.9V18h16z"/>
+                  <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm8 7L4.5 6.5h15L12 11zm8 7V8.2l-8 4.9-8-4.9V18h16z"/>
                 </svg>
                 <span>Email</span>
-                </a>
+              </a>
             </div>
-            </div>
+          </div>
 
-
-        <div class="contact-card">
-          <h3>Social</h3>
+          <!-- Social -->
+          <div class="contact-card">
+            <h3>Social</h3>
 
             <div class="social-icons">
-                <a href="https://www.instagram.com/jgmetalproducts"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram">
+              <a href="https://www.instagram.com/jgmetalproducts" target="_blank" rel="noreferrer" aria-label="Instagram">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm10 2H7a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm-5 3a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
+                  <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm10 2H7a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm-5 3a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
                 </svg>
-                </a>
+              </a>
 
-                <a href="https://www.facebook.com/profile.php?id=100083106891918"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=100083106891918" target="_blank" rel="noreferrer" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0114.3 6h2.2v3h-2.2c-.7 0-1.1.4-1.1 1.1V12h3.3l-.5 3h-2.8v7A10 10 0 0022 12z"/>
+                  <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0114.3 6h2.2v3h-2.2c-.7 0-1.1.4-1.1 1.1V12h3.3l-.5 3h-2.8v7A10 10 0 0022 12z"/>
                 </svg>
-                </a>
+              </a>
             </div>
-            </div>
-        </div> <!-- ✅ closes .contact-grid -->
-        </div> <!-- ✅ closes .container -->
-    </section> <!-- ✅ closes #contact section -->
-
-    <!-- ✅ Footer is now OUTSIDE the contact section -->
-    <footer class="site-footer">
-        <div class="container">
-        <p>© 2021 J&amp;G Metal Products LLC • Made in the USA</p>
+          </div>
         </div>
-    </footer>
-
-
       </div>
     </section>
+
+    <!-- =======================
+         FOOTER (OUTSIDE CONTACT)
+    ======================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2021 J&amp;G Metal Products LLC • Made in the USA</p>
+      </div>
+    </footer>
   </main>
 
+  <!-- =======================
+       SCRIPTS
+  ======================== -->
   <script src="script.js"></script>
 </body>
 </html>
