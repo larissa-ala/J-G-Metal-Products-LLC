@@ -54,21 +54,33 @@ const $ = (id) => document.getElementById(id);
   const reviews = [
     {
       stars: 5,
-      quote: "Super responsive and easy to work with. Turnaround was quick and everything fit perfectly on install.",
-      name: "HVAC Contractor",
-      role: "Sacramento Area"
+      quote: "JR displayed excellent customer service. He was very detailed on my order and was very patient with me. I highly recommend J&G Metal Products big time! I will be ordering from them consistently going forward!",
+      name: "Landen J.",
     },
     {
       stars: 5,
-      quote: "Quality is consistent and communication is solid. We rely on them when timelines get tight.",
-      name: "Project Manager",
-      role: "Commercial HVAC"
+      quote: "Excellent service! I needed a product at the last minute and JYG responded very quickly, unlike other companies. Great job, congratulations!",
+      name: "Samyd G.",
     },
     {
       stars: 5,
-      quote: "Clean work, reliable delivery, and they take pride in the details. Great local shop.",
-      name: "Shop Foreman",
-      role: "Northern California"
+      quote: "I spoke to JR at the last minute; I had already been informed about this company. Totally recommended, in my opinion one of the best companies in Sacramento. Their service and equipment are 10/10. A 100% metal company.",
+      name: "Aczer M.",
+    },
+    {
+      stars: 5,
+      quote: "Quality of products, they helped me with some material I needed at the last minute",
+      name: "Hector G.",
+    },
+    {
+      stars: 5,
+      quote: "Amazing quality work and customer service. Jr was very helpful and a man of his word I needed a good amount of return cans and ceiling boxes and he delivered as promised and on time will definitely be coming back for future business",
+      name: "Juan C.",
+    },
+        {
+      stars: 5,
+      quote: "Very good product and service",
+      name: "Laura F.",
     }
     // Add more reviews here
   ];
